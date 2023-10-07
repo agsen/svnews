@@ -14,7 +14,7 @@
 			method: 'GET',
 			url: 'top-headlines',
 			params: {
-				country: 'id',
+				country: 'us',
 				page,
 				pageSize: 17
 			}
