@@ -1,5 +1,5 @@
 # SVNews
-### News app using Svelte Framework and NewsAPI
+News app using Svelte Framework and NewsAPI
 
 ## Tech Stack
 1. Svelte Framework
