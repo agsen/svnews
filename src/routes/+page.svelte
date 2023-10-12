@@ -43,4 +43,6 @@
 	</div>
 {/if}
 
-<Button class="w-full my-6" on:click={handleLoadMore}>Load more ...</Button>
+{#if $result.data}
+	<Button class="w-full my-6" on:click={handleLoadMore}>Load more ...</Button>
+{/if}

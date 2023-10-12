@@ -18,9 +18,11 @@
 			goto(`/detail/${news?.title}`);
 		}, 300);
 	};
+
+	$: cardCursor = news?.content ? 'cursor-pointer' : 'cursor-not-allowed';
 </script>
 
-<Card class="cursor-pointer hover:translate-y-1" on:click={handleClikCard}>
+<Card class={`${cardCursor} hover:translate-y-1`} on:click={handleClikCard}>
 	<img
 		class="rounded-md mb-2 h-32 object-cover"
 		src={news?.urlToImage || IMAGE_PLACEHOLDER}

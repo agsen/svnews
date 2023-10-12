@@ -1,6 +1,6 @@
 import axios, { type AxiosRequestConfig } from 'axios';
 
-const API_KEY = 'e91a527a5a73466991c6b08a32a1ad35';
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const apiRequest = (config: AxiosRequestConfig) => {
 	const defaultConfig: AxiosRequestConfig = {
